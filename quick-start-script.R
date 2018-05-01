@@ -43,6 +43,8 @@ create_ggraph <- function(graph_str, net_algo, gg_title) {
 # Read data ---------------------------------------------------------------
 
 
+# Expect downloading to take a few minutes. 
+
 wiki_url <- "https://dumps.wikimedia.org/other/clickstream/2018-03/clickstream-enwiki-2018-03.tsv.gz"
 
 march18 <- read_tsv(wiki_url, col_names = c("source", "target", "type", "traffic"))
