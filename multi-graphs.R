@@ -41,9 +41,8 @@ create_ggraph(dm18, "auto", "Data mining")
 
 create_ggraph_b(dm18, "auto", "Data mining")
 
-ggsave("DM2.png",  width=10, height=6,  dpi = 300, pointsize=8)
 
-ggsave("DM_final_1.png",  width=5.5, height=4.5,  dpi = 300, pointsize=9.5)
+ggsave("DM.png",  width=5.5, height=4.5,  dpi = 300, pointsize=9.5)
 
 
 
@@ -60,11 +59,10 @@ DS <- read_csv("DS.csv")
 V(ds18)$groupings <- DS$group
 
 create_ggraph(ds18, "auto", "Data Science") 
-set.seed(13)
 
 create_ggraph_b(ds18, "auto", "Data Science") 
 
-ggsave("DS_final3.png",  width=5.5, height=4.5,  dpi = 300, pointsize=8)
+ggsave("DS.png",  width=5.5, height=4.5,  dpi = 300, pointsize=8)
 
 
 
@@ -81,14 +79,13 @@ V(ml18)$groupings <- ML$group
 
 create_ggraph(ml18, "auto", "Machine learning")
 
-set.seed(5)
 
 create_ggraph_b(ml18, "auto", "Machine learning") 
 
 
 vertex_attr(ml18) %>%  as_tibble() %>% View("ml18")
 
-ggsave("ML_final2.png",  width=5.3, height=4,  dpi = 300, pointsize=5)
+ggsave("ML.png",  width=5.3, height=4,  dpi = 300, pointsize=5)
 
 
 # AI ----------------------------------------------------------------------
@@ -107,13 +104,12 @@ V(ai18)$groupings <- AI$group[1:32]
 
 create_ggraph(ai18, "auto", "Artificial_intelligence") 
 
-set.seed(35)
 create_ggraph_b(ai18, "auto", "Artificial_intelligence") 
 
 
 vertex_attr(ai18) %>%  as_tibble() %>% View("ai18")
 
-ggsave("AI_final_intro9.png",  width=5, height=4.1,  dpi = 300, pointsize=8)
+ggsave("AI.png",  width=5, height=4.1,  dpi = 300, pointsize=8)
 
  
 # AGI ---------------------------------------------------------------------
@@ -127,7 +123,7 @@ create_ggraph(agi18, "auto", "Artificial general intelligence")
 
 vertex_attr(agi18) %>%  as_tibble() %>% View("agi18")
 
-ggsave("AGI_final.png",  width=5, height=4,  dpi = 300, pointsize=8)
+ggsave("AGI.png",  width=5, height=4,  dpi = 300, pointsize=8)
 
 
 
